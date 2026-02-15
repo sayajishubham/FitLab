@@ -1,0 +1,5 @@
+FROM chromadb/chroma:latest
+
+ENV CHROMA_SERVER_AUTH_PROVIDER=""
+ENV CHROMA_SERVER_CORS_ALLOW_ORIGINS="*"
+ENV CHROMA_API_IMPL=chromadb.api.fastapi.FastAPI
